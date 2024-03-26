@@ -20,7 +20,7 @@ import statistics
 imcs = [pessoa['imc'] for pessoa in pessoas]
 media_imc = statistics.mean(imcs)
 mediana_imc = statistics.median(imcs)
-desvio_padrao = statistics.pstdev(imcs)
+desvio_padrao = statistics.stdev(imcs)
 
 print(f"Média do IMC: {media_imc}")
 print(f"Mediana do IMC: {mediana_imc}")
